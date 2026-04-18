@@ -189,13 +189,16 @@ body {
 }
 
 .season {
-    color: var(--primary-color);
-    font-size: 0.9rem;
-    font-weight: 600;
-    letter-spacing: 0.25em;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 0.85rem;
+    font-weight: 800;
+    letter-spacing: 0.15em;
     text-transform: uppercase;
-    display: block;
-    margin-bottom: 1.5rem;
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    margin-bottom: 2rem;
+    border-radius: 2px;
 }
 
 .main-title {
@@ -246,22 +249,26 @@ body {
 /* ---------------- Ticker Section ---------------- */
 .sponsors-ticker {
     background-color: #0b0b0b;
-    padding: 1.5rem 0;
+    padding: 2.5rem 0;
     overflow: hidden;
     white-space: nowrap;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .ticker-track {
     display: inline-flex;
     gap: 4rem;
-    animation: scroll 20s linear infinite;
+    animation: scroll 30s linear infinite;
 }
 
 .ticker-track span {
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: #444;
-    letter-spacing: 0.1em;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0.05em;
+    font-family: var(--font-family);
+    text-transform: uppercase;
 }
 
 @keyframes scroll {
@@ -286,13 +293,24 @@ body {
     color: var(--primary-color);
     font-size: 0.8rem;
     font-weight: 600;
-    letter-spacing: 0.1em;
-    display: block;
-    margin-bottom: 0.5rem;
+    letter-spacing: 0.15em;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+    text-transform: uppercase;
+}
+
+.category-subtitle::before {
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 14px;
+    background-color: var(--primary-color);
 }
 
 .trainings-title {
-    font-size: 3rem;
+    font-size: 3.5rem;
     font-weight: 900;
     text-transform: uppercase;
     line-height: 1;
@@ -655,28 +673,16 @@ body {
 }
 
 .excellence-card {
-    height: 500px;
-    position: relative;
+    height: 480px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     padding: 3rem 2rem;
-    overflow: hidden;
-    background-size: cover;
-    background-position: center;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #e0e0e0;
     transition: transform 0.5s ease;
-}
-
-.excellence-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
-    z-index: 1;
 }
 
 .excellence-card:hover {
@@ -684,47 +690,56 @@ body {
 }
 
 .card-inner {
-    position: relative;
-    z-index: 2;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    height: 100%;
 }
 
 .poule-label {
-    font-size: 0.75rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    background-color: #000;
+    color: #fff;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.85rem;
+    font-weight: 800;
     text-transform: uppercase;
-    margin-bottom: 0.5rem;
+    margin-bottom: auto;
 }
 
 .excellence-card h3 {
-    font-size: 2.25rem;
+    font-size: 2.5rem;
     font-weight: 900;
     text-transform: uppercase;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1;
+    color: #000;
 }
 
 .excellence-divider {
-    width: 50px;
-    height: 2px;
-    background-color: var(--primary-color);
-    margin-bottom: 2.5rem;
+    display: none;
 }
 
 .excellence-card .btn {
     width: 100%;
-    max-width: 180px;
 }
 
-/* Background Images for Cards */
-.card-ecole { background-image: url('https://images.unsplash.com/photo-1510566337590-2fc1f21d0faa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); }
-.card-pre { background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); }
-.card-formation { background-image: url('https://images.unsplash.com/photo-1574629810360-7efbbe195018?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); }
-.card-premiere { background-image: url('https://images.unsplash.com/photo-1543946207-39bd91e70ca7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'); }
+.excellence-card .btn-outline {
+    border-color: #000;
+    color: #000;
+    font-weight: 800;
+}
+
+.excellence-card .btn-outline:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Background Images for Cards - Removed for Excellence Section */
+.card-ecole { background-color: #fff; }
+.card-pre { background-color: #fff; }
+.card-formation { background-color: #fff; }
+.card-premiere { background-color: #fff; }
 
 /* ---------------- Roster Section ---------------- */
 .roster-section {
@@ -793,6 +808,10 @@ body {
     z-index: 2;
 }
 
+.card-white::before { background-color: #000; }
+.card-red::before { background-color: #fff; }
+.card-ziani::before { background-color: #fff; }
+
 .player-number {
     position: absolute;
     top: 2rem;
@@ -822,11 +841,13 @@ body {
     margin-bottom: 1.5rem;
 }
 
-.card-red .player-number { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3); }
-.card-white .player-number { -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1); }
+.card-red .player-number { -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4); }
+.card-white .player-number { -webkit-text-stroke: 1px rgba(0, 0, 0, 0.15); }
 .card-white .player-pos { background-color: #000; }
-.card-white .player-name { color: #000; }
+.card-white .player-name { color: #000; background-color: #fff; }
 .card-red .player-pos { background-color: #fff; color: var(--primary-color); }
+.card-mendes .player-pos { background-color: var(--primary-color); }
+.card-ziani .player-pos { background: transparent; border: 1px solid white; }
 
 .player-name {
     font-size: 2.25rem;
@@ -874,7 +895,13 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    border-bottom: 2px solid #000;
+    border: none;
+}
+
+.activity-card-black {
+    background-color: #0b0b0b;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .activity-tag {
@@ -889,7 +916,7 @@ body {
 }
 
 .tag-red { background-color: var(--primary-color); color: white; }
-.tag-white { background-color: white; color: var(--primary-color); border: 1px solid var(--primary-color); }
+.tag-white { background-color: white; color: var(--primary-color); }
 .tag-black { background-color: black; color: white; }
 
 .activity-icon {
@@ -902,6 +929,11 @@ body {
     justify-content: center;
     color: white;
     margin-bottom: 3rem;
+}
+
+.activity-card-black .activity-icon {
+    background-color: #fff;
+    color: #000;
 }
 
 .activity-icon-red { background-color: var(--primary-color); }
@@ -922,6 +954,11 @@ body {
     border-left: 2px solid var(--primary-color);
     margin-bottom: 3rem;
     flex: 1;
+}
+
+.activity-card-black .activity-desc {
+    color: rgba(255, 255, 255, 0.6);
+    border-left: 2px solid #fff;
 }
 
 .activity-btn {
@@ -1101,12 +1138,11 @@ body {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto auto;
+    grid-auto-rows: 150px;
     gap: 1.5rem;
 }
 
 .gallery-card {
-    height: 480px;
     padding: 3.5rem;
     display: flex;
     flex-direction: column;
@@ -1149,6 +1185,7 @@ body {
 
 /* Seniors Card */
 .card-seniors {
+    grid-row: span 4;
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80');
     background-size: cover;
     background-position: center;
@@ -1160,6 +1197,7 @@ body {
 
 /* U11-U13 Card */
 .card-u11 {
+    grid-row: span 2;
     background-color: white;
     justify-content: center;
     padding-bottom: 3.5rem;
@@ -1168,6 +1206,7 @@ body {
 
 /* Gardiens Card */
 .card-gardiens {
+    grid-row: span 3;
     background-color: var(--primary-color);
     color: white;
     border: none;
@@ -1177,8 +1216,10 @@ body {
 
 /* U15-U17 Card */
 .card-u15 {
-    background-color: black;
+    grid-row: span 5;
+    background-color: #0b0b0b;
     color: white;
+    border: none;
 }
 .card-u15 .gallery-tag { border: 1.5px solid white; color: white; background: transparent; }
 
@@ -1680,4 +1721,100 @@ body {
 
 .shop-cta-btn:hover {
     transform: translateY(-5px);
+}
+
+/* ---------------------------------------------------- */
+/* RESPONSIVENESS & MOBILE                              */
+/* ---------------------------------------------------- */
+
+/* Laptops / Smaller Desktops (max-width: 1200px) */
+@media screen and (max-width: 1200px) {
+    .roster-grid, .excellence-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+    .main-title { font-size: 5rem; }
+    .hero { padding: 0 1.5rem; }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+    
+    .card-seniors, .card-u11, .card-gardiens, .card-u15 {
+        grid-row: auto;
+        min-height: 400px;
+    }
+    
+    .activities-grid { grid-template-columns: repeat(2, 1fr); }
+    .video-grid { grid-template-columns: 1fr; }
+    
+    .footer-links { gap: 3rem; flex-wrap: wrap; }
+    
+    .match-card {
+        padding: 2rem;
+    }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media screen and (max-width: 768px) {
+    section { padding: 4rem 1.5rem !important; }
+    .navbar { flex-direction: column; gap: 1.5rem; padding: 1.5rem; }
+    .nav-links { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .nav-actions { margin-top: 1rem; flex-wrap: wrap; justify-content: center; }
+    
+    .main-title { font-size: 3.5rem; margin-bottom: 2rem; }
+    .description { font-size: 1rem; }
+    .hero-actions { flex-direction: column; gap: 1rem; width: 100%; }
+    .hero-actions .btn-large { width: 100%; }
+    
+    .ticker-track span { font-size: 1.25rem; margin: 0 1.5rem; }
+    
+    /* Headers Adjustments */
+    .trainings-header, .match-day-header, .roster-header, .results-header {
+        flex-direction: column; 
+        align-items: flex-start; 
+        gap: 1.5rem;
+    }
+    
+    .trainings-title, .match-day-title, .roster-title, .excellence-title, .activities-title, .gallery-title, .partners-title {
+        font-size: 2.25rem; 
+    }
+    
+    /* Grids to Single Column */
+    .trainings-grid, .results-grid, .roster-grid, .excellence-grid, .activities-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .trainings-filters, .activities-filters { 
+        flex-wrap: wrap; 
+    }
+    
+    /* Result Cards */
+    .result-main { flex-direction: column; gap: 2.5rem; padding: 1rem 0; }
+    .result-score-container { margin: 1rem 0; }
+    .result-team { width: 100%; }
+    .result-top { flex-direction: column; gap: 1rem; align-items: flex-start; }
+    
+    /* Match Day Card */
+    .match-card { flex-direction: column; text-align: center; gap: 2.5rem; }
+    .match-teams { flex-direction: column; gap: 1rem; }
+    .match-vs { margin: 1rem 0; }
+    
+    /* Partners */
+    .partners-row { flex-wrap: wrap; justify-content: center; gap: 2rem; margin-bottom: 2rem; }
+    
+    /* Shop CTA */
+    .shop-cta-section { padding: 6rem 1.5rem; }
+    .shop-cta-title { font-size: 3rem; }
+    
+    /* Footer */
+    .footer-top { flex-direction: column; gap: 3rem; }
+    .footer-desc { max-width: 100%; }
+    .footer-bottom { flex-direction: column; gap: 1.5rem; text-align: center; }
+    .footer-bottom-links { flex-wrap: wrap; justify-content: center; }
+    .socials { justify-content: center; }
 }
