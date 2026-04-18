@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condor FC</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="hero-wrapper">
+        <header class="navbar">
+        <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <!-- Diamond Logo Shape -->
+                <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="white" />
+                <path d="M12 6.5L17.5 12L12 17.5L6.5 12L12 6.5Z" fill="#111111" />
+            </svg>
+            <span class="logo-text">CONDOR FC</span>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#" class="nav-item">INSTITUTIONNEL <span class="chevron"></span></a>
+            <a href="#" class="nav-item">ÉQUIPES <span class="chevron"></span></a>
+            <a href="#" class="nav-item">VIE DU CLUB <span class="chevron"></span></a>
+            <a href="#" class="nav-item">INFOS PRATIQUES <span class="chevron"></span></a>
+        </nav>
+
+        <div class="nav-actions">
+            <button class="cart-btn" aria-label="Panier">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <path d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                </svg>
+                <span class="cart-dot"></span>
+            </button>
+            <button class="btn btn-outline">BOUTIQUE</button>
+            <button class="btn btn-primary">BILLETTERIE</button>
+        </div>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <span class="season">SAISON 2026/2027</span>
+            <h1 class="main-title">L'AIGLE<br>VOLE HAUT</h1>
+            <p class="description">
+                Le Condor FC, l'excellence du football professionnel. De la formation à<br>
+                l'équipe première, nous cultivons la passion, la rigueur et la victoire.
+            </p>
+            <div class="hero-actions">
+                <button class="btn btn-primary btn-large">DÉCOUVRIR L'ÉQUIPE N2</button>
+                <button class="btn btn-outline-light btn-large">BILLETTERIE</button>
+            </div>
+        </div>
+
+        <div class="floating-badge">N</div>
+    </main>
+    </div> <!-- End hero-wrapper -->
+
+    <!-- Sponsor Ticker Section -->
+    <div class="sponsors-ticker">
+        <div class="ticker-track">
+            <span>EA SPORTS</span>
+            <span>COCA-COLA</span>
+            <span>ORANGE</span>
+            <span>EMIRATES</span>
+            <span>NIKE</span>
+            <span>EA SPORTS</span>
+            <span>COCA-COLA</span>
+            <span>ORANGE</span>
+            <span>EMIRATES</span>
+            <span>NIKE</span>
+            <span>EA SPORTS</span>
+            <span>COCA-COLA</span>
+            <span>ORANGE</span>
+            <span>EMIRATES</span>
+            <span>NIKE</span>
+        </div>
+    </div>
+
+
+    <!-- Trainings Section -->
+    <section class="trainings-section">
+        <div class="trainings-header">
+            <div class="trainings-title-wrapper">
+                <span class="category-subtitle">| CONSULTEZ LES HORAIRES PAR CATÉGORIE</span>
+                <h2 class="trainings-title">CALENDRIER DES <span class="text-red">ENTRAÎNEMENTS</span></h2>
+            </div>
+            <a href="#" class="btn btn-outline">PLANNING COMPLET &rarr;</a>
+        </div>
+
+        <div class="trainings-filters">
+            <button class="filter-btn active">TOUTES</button>
+            <button class="filter-btn">U7</button>
+            <button class="filter-btn">U9</button>
+            <button class="filter-btn">U11</button>
+            <button class="filter-btn">U13</button>
+            <button class="filter-btn">U15</button>
+            <button class="filter-btn">U17</button>
+            <button class="filter-btn">SENIORS</button>
+        </div>
+
+        <div class="trainings-grid">
+            <!-- Card 1: Seniors -->
+            <div class="training-card card-dark">
+                <div class="card-date red-bg">
+                    <span class="day text-white">LUN</span>
+                    <span class="num text-white">18</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-team">
+                        <h3>SENIORS</h3>
+                        <p>ÉQUIPE PREMIÈRE</p>
+                    </div>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>19H30 - 21H30</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Stade Municipal, A</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: U15 -->
+            <div class="training-card card-light">
+                <div class="card-date black-bg">
+                    <span class="day">MER</span>
+                    <span class="num">20</span>
+                </div>
+                <div class="card-content">
+                    <div class="card-team">
+                        <h3 class="text-red">U15</h3>
+                        <p>PRÉ-FORMATION</p>
+                    </div>
+                    <div class="card-details">
+                        <div class="detail-item text-gray">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>16H00 - 18H00</span>
+                        </div>
+                        <div class="detail-item text-gray">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Terrain Synth B</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: U7 - U9 -->
+            <div class="training-card card-red">
+                <div class="bg-pattern"></div>
+                <div class="card-date white-bg">
+                    <span class="day text-black">MER</span>
+                    <span class="num text-black">20</span>
+                </div>
+                <div class="card-content relative-z">
+                    <div class="card-team">
+                        <h3>U7 - U9</h3>
+                        <p>ÉCOLE DE FOOT</p>
+                    </div>
+                    <div class="card-details">
+                        <div class="detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>14H00 - 15H30</span>
+                        </div>
+                        <div class="detail-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <span>Terrains 1 & 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Results Section -->
+    <section class="results-section">
+        <div class="results-header">
+            <h2 class="results-title">DERNIERS <span class="text-red">RÉSULTATS</span></h2>
+            <div class="results-nav">
+                <div class="nav-arrow">&larr;</div>
+                <div class="nav-arrow">&rarr;</div>
+            </div>
+        </div>
+
+        <div class="results-grid">
+            <!-- Card 1: Victory -->
+            <div class="result-card card-result-dark">
+                <div class="result-top">
+                    <span class="result-category">SENIORS A • J12</span>
+                    <span class="result-status text-victory">VICTOIRE</span>
+                </div>
+                <div class="result-main">
+                    <div class="result-team result-team-focus">
+                        <div class="result-logo-box logo-focus">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="black" />
+                                <path d="M12 6.5L17.5 12L12 17.5L6.5 12L12 6.5Z" fill="white" />
+                            </svg>
+                        </div>
+                        <h4>CONDOR FC</h4>
+                    </div>
+                    
+                    <div class="result-score-container">
+                        <span class="result-score">3 - 1</span>
+                        <span class="result-time">TERMINÉ</span>
+                    </div>
+
+                    <div class="result-team">
+                        <div class="result-logo-box">
+                            <span style="font-weight: 900; color: rgba(255,255,255,0.4);">USM</span>
+                        </div>
+                        <h4>US MONTAGNARDE</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Draw -->
+            <div class="result-card card-result-light">
+                <div class="result-top">
+                    <span class="result-category">SENIORS A • CDF</span>
+                    <span class="result-status text-draw">NUL</span>
+                </div>
+                <div class="result-main">
+                    <div class="result-team">
+                        <div class="result-logo-box">
+                            <span style="font-weight: 900; color: #ccc;">FCV</span>
+                        </div>
+                        <h4>FC VANNES</h4>
+                    </div>
+                    
+                    <div class="result-score-container">
+                        <span class="result-score">1 - 1</span>
+                        <span class="penalty-badge">TAB (4-5)</span>
+                    </div>
+
+                    <div class="result-team result-team-focus">
+                        <div class="result-logo-box logo-focus-red">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="white" />
+                                <path d="M12 6.5L17.5 12L12 17.5L6.5 12L12 6.5Z" fill="#ef3340" />
+                            </svg>
+                        </div>
+                        <h4>CONDOR FC</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <!-- Match Day Section -->
+    <section class="match-day-section">
+        <div class="match-day-header">
+            <div>
+                <span class="match-day-subtitle">PROCHAIN RENDEZ-VOUS</span>
+                <h2 class="match-day-title">JOUR DE MATCH</h2>
+            </div>
+            <a href="#" class="calendar-link">VOIR TOUT LE CALENDRIER &rarr;</a>
+        </div>
+
+        <div class="match-card">
+            <div class="match-info">
+                <div class="info-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    <span>SAMEDI 24 OCTOBRE • 20:00</span>
+                </div>
+                <div class="info-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                    <span>STADE DE L'AIGLE</span>
+                </div>
+                <div class="info-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    <span>CHAMPIONNAT N2 - J8</span>
+                </div>
+            </div>
+
+            <div class="match-teams">
+                <div class="team">
+                    <div class="team-logo">
+                        <div class="logo-circle">
+                            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="black" />
+                                <path d="M12 6.5L17.5 12L12 17.5L6.5 12L12 6.5Z" fill="white" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="team-name">CONDOR FC</span>
+                </div>
+                
+                <span class="vs-text">VS</span>
+
+                <div class="team">
+                    <div class="team-logo">
+                        <div class="logo-square">
+                            <div class="inner-square"></div>
+                        </div>
+                    </div>
+                    <span class="team-name">FC OLYMPIQUE</span>
+                </div>
+            </div>
+
+            <div class="match-action">
+                <button class="btn btn-white">ACHETER DES BILLETS</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Roster Section -->
+    <section class="roster-section">
+        <div class="roster-header">
+            <div class="roster-title-container">
+                <h2 class="roster-title">EFFECTIF <span class="text-red">PRO</span></h2>
+                <div class="roster-subtitle">LES AIGLES DE LA SAISON</div>
+            </div>
+            <a href="#" class="btn btn-white">VOIR TOUT L'EFFECTIF &rarr;</a>
+        </div>
+
+        <div class="roster-grid">
+            <!-- Player 1: Lucas Mendes -->
+            <div class="player-card card-mendes">
+                <div class="player-number">10</div>
+                <div class="player-content">
+                    <div class="player-pos">ATTAQUANT</div>
+                    <h3 class="player-name">LUCAS<br>MENDES</h3>
+                </div>
+            </div>
+
+            <!-- Player 2: Thomas Dubois -->
+            <div class="player-card card-white">
+                <div class="player-number">04</div>
+                <div class="player-content">
+                    <div class="player-pos">DÉFENSEUR</div>
+                    <h3 class="player-name">THOMAS<br>DUBOIS</h3>
+                </div>
+            </div>
+
+            <!-- Player 3: Hugo Lefevre -->
+            <div class="player-card card-red">
+                <div class="player-number">01</div>
+                <div class="player-content">
+                    <div class="player-pos">GARDIEN</div>
+                    <h3 class="player-name">HUGO<br>LEFEVRE</h3>
+                </div>
+            </div>
+
+            <!-- Player 4: Karim Ziani -->
+            <div class="player-card card-ziani">
+                <div class="player-number">08</div>
+                <div class="player-content">
+                    <div class="player-pos">MILIEU</div>
+                    <h3 class="player-name">KARIM<br>ZIANI</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section">
+        <h2 class="gallery-title">GALERIE PAR <span class="text-red">CATÉGORIE</span></h2>
+
+        <div class="gallery-grid">
+            <!-- Seniors Card -->
+            <div class="gallery-card card-seniors">
+                <span class="gallery-tag">COMPÉTITION</span>
+                <h3>SENIORS<br>(PRO & RÉSERVE)</h3>
+                <button class="gallery-btn">VOIR LA GALERIE &rarr;</button>
+            </div>
+
+            <!-- U11-U13 Card -->
+            <div class="gallery-card card-u11">
+                <span class="gallery-tag">APPRENTISSAGE</span>
+                <h3>U11 - U13</h3>
+            </div>
+
+            <!-- Gardiens Card -->
+            <div class="gallery-card card-gardiens">
+                <span class="gallery-tag">SPÉCIFIQUE</span>
+                <h3>GARDIENS</h3>
+                <button class="gallery-btn">VOIR LA GALERIE &rarr;</button>
+            </div>
+
+            <!-- U15-U17 Card -->
+            <div class="gallery-card card-u15">
+                <span class="gallery-tag">FORMATION</span>
+                <h3>U15 - U17</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Activities & Content Section -->
+    <section class="activities-section">
+        <h2 class="activities-title">ACTIVITÉS & <span class="text-red">CONTENU</span></h2>
+        
+        <div class="activities-filters">
+            <button class="filter-btn active">TOUT VOIR</button>
+            <button class="filter-btn btn-white-action">JEUX & QUIZ</button>
+            <button class="filter-btn btn-white-action">INTERVIEWS</button>
+            <button class="filter-btn btn-white-action">VIDÉOS</button>
+        </div>
+
+        <div class="activities-grid">
+            <!-- Card 1: Pronostics -->
+            <div class="activity-card">
+                <div class="activity-tag tag-red">POPULAIRE</div>
+                <div class="activity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="4" width="12" height="12" rx="6"></rect><path d="M9 20h6"></path><path d="M12 16v4"></path></svg>
+                </div>
+                <h3>PRONOSTICS L1</h3>
+                <p class="activity-desc">Défiez les autres membres du Condor FC chaque week-end et tentez de remporter le maillot officiel.</p>
+                <button class="activity-btn">JOUER MAINTENANT <span>&rarr;</span></button>
+            </div>
+
+            <!-- Card 2: Quiz -->
+            <div class="activity-card">
+                <div class="activity-tag tag-white">NOUVEAU</div>
+                <div class="activity-icon activity-icon-red">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
+                </div>
+                <h3>LE GRAND QUIZ</h3>
+                <p class="activity-desc">Testez vos connaissances sur l'histoire du club, ses légendes et ses statistiques historiques.</p>
+                <button class="activity-btn btn-white-action">LANCER LE QUIZ <span>&rarr;</span></button>
+            </div>
+
+            <!-- Card 3: Parole de Coach -->
+            <div class="activity-card">
+                <div class="activity-tag tag-black">EXCLUSIF</div>
+                <div class="activity-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"></path><path d="M19 10v2a7 7 0 0 1-14 0v-2"></path><line x1="12" y1="19" x2="12" y2="22"></line></svg>
+                </div>
+                <h3>PAROLE DE COACH</h3>
+                <p class="activity-desc">Entretien exclusif avec le manager de l'équipe première sur les ambitions de cette nouvelle saison.</p>
+                <button class="activity-btn">ÉCOUTER <span>&rarr;</span></button>
+            </div>
+        </div>
+
+        <div class="activities-grid video-grid" style="margin-top: 2rem;">
+            <!-- Card 4: Inside Vestiaire -->
+            <div class="video-card video-card-red" style="padding: 3rem; background-color: var(--primary-color); border: none; min-height: 400px; display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="video-tag" style="background: rgba(255,255,255,0.2); width: fit-content; padding: 0.2rem 0.6rem; font-size: 0.7rem; font-weight: 800; border-radius: 2px;">VIDÉO</div>
+                <div class="video-icon-large" style="margin-bottom: 2rem;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" style="width: 60px; height: 60px;"><path d="m22 8-6 4 6 4V8Z"></path><rect x="2" y="6" width="14" height="12" rx="2" ry="2"></rect></svg>
+                </div>
+                <h3 style="font-size: 3rem; line-height: 1; font-weight: 900; color: white;">INSIDE<br>VESTIAIRE</h3>
+                <p style="margin: 2rem 0; color: rgba(255,255,255,0.8); font-size: 1.1rem;">Plongez au cœur de la causerie d'avant-match lors du derby victorieux de la semaine dernière.</p>
+                <button class="video-btn" style="background: white; color: black; border: none; padding: 1.25rem 2.5rem; font-weight: 800; text-transform: uppercase; width: fit-content; display: flex; align-items: center; gap: 1rem; cursor: pointer;">REGARDER <span style="font-size: 0.8rem;">▶</span></button>
+            </div>
+
+            <!-- Card 5: Top Buts -->
+            <div class="video-card video-card-black" style="padding: 3rem; background-color: #111; border: 1px solid rgba(255,255,255,0.1); display: flex; flex-direction: column; justify-content: space-between;">
+                <div class="video-tag" style="background: var(--primary-color); width: fit-content; padding: 0.2rem 0.6rem; font-size: 0.7rem; font-weight: 800; border-radius: 2px;">MENSUELLE</div>
+                <div class="video-icon-large">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5" style="width: 60px; height: 60px;"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+                </div>
+                <h3 style="font-size: 3rem; line-height: 1; font-weight: 900; color: white;">TOP BUTS<br><span class="text-red">DU MOIS</span></h3>
+                <p style="margin: 2rem 0; color: rgba(255,255,255,0.4); font-size: 1.1rem;">Revivez les plus belles réalisations de toutes nos catégories confondues et votez pour le but du mois.</p>
+                <button class="video-btn-outline" style="border: 1px solid rgba(255,255,255,0.3); background: transparent; color: white; padding: 1.25rem 2.5rem; font-weight: 800; text-transform: uppercase; width: fit-content; cursor: pointer;">VOIR LA COMPILATION &rarr;</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Excellence Section -->
+    <section class="excellence-section">
+        <span class="excellence-subtitle">NOS PÔLES</span>
+        <h2 class="excellence-title">L'EXCELLENCE À TOUS LES NIVEAUX</h2>
+
+        <div class="excellence-grid">
+            <div class="excellence-card card-ecole">
+                <div class="card-inner">
+                    <span class="poule-label">U7 - U9</span>
+                    <h3>ÉCOLE DE FOOT</h3>
+                    <div class="excellence-divider"></div>
+                    <button class="btn btn-outline">S'INSCRIRE</button>
+                </div>
+            </div>
+
+            <div class="excellence-card card-pre">
+                <div class="card-inner">
+                    <span class="poule-label">U11 - U13</span>
+                    <h3>PRÉ-FORMATION</h3>
+                    <div class="excellence-divider"></div>
+                    <button class="btn btn-outline">S'INSCRIRE</button>
+                </div>
+            </div>
+
+            <div class="excellence-card card-formation">
+                <div class="card-inner">
+                    <span class="poule-label">U15 - U17</span>
+                    <h3>FORMATION</h3>
+                    <div class="excellence-divider"></div>
+                    <button class="btn btn-outline">S'INSCRIRE</button>
+                </div>
+            </div>
+
+            <div class="excellence-card card-premiere">
+                <div class="card-inner">
+                    <span class="poule-label">SENIORS N2</span>
+                    <h3>ÉQUIPE<br>PREMIÈRE</h3>
+                    <div class="excellence-divider"></div>
+                    <button class="btn btn-primary">S'INSCRIRE</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <span class="partners-subtitle">ILS NOUS SOUTIENNENT</span>
+        <h2 class="partners-title">SPONSORS & PARTENAIRES</h2>
+
+        <div class="partners-container">
+            <!-- Row 1: Main -->
+            <div class="partners-row">
+                <div class="partner-box box-main">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">EMIRATES</span>
+                    <span class="partner-type">SPONSOR PRINCIPAL</span>
+                </div>
+            </div>
+
+            <!-- Row 2: Level 2 -->
+            <div class="partners-row">
+                <div class="partner-box box-lv2">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">NIKE</span>
+                    <span class="partner-type">ÉQUIPEMENTIER</span>
+                </div>
+                <div class="partner-box box-lv2">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">EA SPORTS</span>
+                    <span class="partner-type">PARTENAIRE OFFICIEL</span>
+                </div>
+            </div>
+
+            <!-- Row 3: Level 3 -->
+            <div class="partners-row">
+                <div class="partner-box box-lv3">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">COCA-COLA</span>
+                    <span class="partner-type">PARTENAIRE OFFICIEL</span>
+                </div>
+                <div class="partner-box box-lv3">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">ORANGE</span>
+                    <span class="partner-type">PARTENAIRE RÉGIONAL</span>
+                </div>
+                <div class="partner-box box-lv3">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">CRÉDIT AGRICOLE</span>
+                    <span class="partner-type">PARTENAIRE RÉGIONAL</span>
+                </div>
+                <div class="partner-box box-lv3">
+                    <div class="partner-logo-placeholder"></div>
+                    <span class="partner-name">AIR FRANCE</span>
+                    <span class="partner-type">PARTENAIRE RÉGIONAL</span>
+                </div>
+            </div>
+
+            <!-- Row 4: Level 4 -->
+            <div class="partners-row">
+                <div class="partner-box box-lv4">
+                    <span class="partner-name">BOULANGER</span>
+                    <span class="partner-type">FOURNISSEUR</span>
+                </div>
+                <div class="partner-box box-lv4">
+                    <span class="partner-name">INTERSPORT</span>
+                    <span class="partner-type">FOURNISSEUR</span>
+                </div>
+                <div class="partner-box box-lv4">
+                    <span class="partner-name">KFC</span>
+                    <span class="partner-type">FOURNISSEUR</span>
+                </div>
+                <div class="partner-box box-lv4">
+                    <span class="partner-name">UBER EATS</span>
+                    <span class="partner-type">FOURNISSEUR</span>
+                </div>
+                <div class="partner-box box-lv4">
+                    <span class="partner-name">BKT</span>
+                    <span class="partner-type">FOURNISSEUR</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </section>
+
+    <!-- Shop CTA Section -->
+    <section class="shop-cta-section">
+        <span class="shop-cta-subtitle">BOUTIQUE OFFICIELLE</span>
+        <h2 class="shop-cta-title">PORTEZ NOS COULEURS</h2>
+        <p class="shop-cta-text">
+            Découvrez le nouveau maillot domicile 2026/2027 et toute la collection training. Affichez votre soutien au Condor FC.
+        </p>
+        <button class="shop-cta-btn">ACCÉDER À LA BOUTIQUE &rarr;</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L22 12L12 22L2 12L12 2Z" fill="white" />
+                        <path d="M12 6.5L17.5 12L12 17.5L6.5 12L12 6.5Z" fill="#ef3340" />
+                    </svg>
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 1.8rem; font-weight: 900; line-height: 1;">CONDOR</span>
+                        <span style="font-size: 1.8rem; font-weight: 900; line-height: 1;">FC</span>
+                    </div>
+                </div>
+                <p class="footer-desc">
+                    L'Aigle Vole Haut. Club de football professionnel évoluant en N2, avec une formation d'excellence de l'école de foot jusqu'aux seniors.
+                </p>
+                <div class="socials" style="margin-top: 2rem;">
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path></svg></a>
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
+                    <a href="#" class="social-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg></a>
+                </div>
+            </div>
+
+            <div class="footer-links" style="gap: 4rem;">
+                <div class="footer-col">
+                    <h4 style="color: rgba(255,255,255,0.4); font-size: 0.9rem;">LE CLUB</h4>
+                    <ul>
+                        <li><a href="#">Présentation</a></li>
+                        <li><a href="#">Histoire</a></li>
+                        <li><a href="#">Palmarès</a></li>
+                        <li><a href="#">Organigramme</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 style="color: rgba(255,255,255,0.4); font-size: 0.9rem;">ÉQUIPES</h4>
+                    <ul>
+                        <li><a href="#">Équipe Première (N2)</a></li>
+                        <li><a href="#">Formation (U15-U17)</a></li>
+                        <li><a href="#">Pré-formation (U11-U13)</a></li>
+                        <li><a href="#">École de foot (U7-U9)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col" style="max-width: 250px;">
+                    <h4 style="color: rgba(255,255,255,0.4); font-size: 0.9rem;">CONTACT</h4>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 1rem; line-height: 1.5;">Stade de l'Aigle, 123 Avenue des Sports</p>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6); margin-bottom: 0.5rem;">contact@condorfc.fr</p>
+                    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.6);">+33 1 23 45 67 89</p>
+                    <a href="#" class="footer-btn-contact">NOUS CONTACTER</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright" style="text-transform: uppercase; font-weight: 700; letter-spacing: 0.05em;">&copy; 2026 CONDOR FC. TOUS DROITS RÉSERVÉS.</p>
+            <div class="footer-bottom-links">
+                <a href="#">MENTIONS LÉGALES</a>
+                <a href="#">CONFIDENTIALITÉ</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
